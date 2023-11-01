@@ -1,0 +1,514 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins', sans-serif;
+}
+/* Header */
+header, header .header-section {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color:#000;
+  }
+  header ul.navegacion {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  header .menu-item a, header .logo a {
+    color: #3498db;
+    font-size: 20px;
+    padding: 0 18px;
+    text-decoration: none;
+  }
+  header .logo a {
+    font-family: "Pixelify+Sans", "Poppins";
+    font-size: 36px;
+    padding: 0 16px;
+  }
+
+  /* Inicio */
+  .parallax-home {
+    height: 100vh;
+    background-image: url("../multimedia/imagenes/cupula.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .parallax-content h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .parallax-content p {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Content */
+  .content {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .content h2 {
+    font-size: 2em;
+  }
+  .content p {
+    font-size: 1.2em;
+  }
+  
+  /* Bienvenidos Sección */
+  .bienvenidos-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #dfbebe;
+  }
+  .content-bienvenidos {
+    max-width: 100%;
+    text-align: center;
+  }
+  .content-bienvenidos h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .content-bienvenidos p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Sección Container Home Medio */
+  .section-container-home-medio {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #dfbebe;
+  }
+  .content-home-medio {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .content-home-medio h2 {
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+  .content-home-medio h3 {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+  }
+  
+  /* Estilos de la sección de tarjetas */
+  section.tarjetas-home {
+    background-color: #dfbebe;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .tarjeta-home {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(233, 157, 228, 0.1882352941);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .tarjeta-imagen {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .titulo-tarjeta {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .descripcion-tarjeta {
+    font-size: 1em;
+  }
+  
+  /* Estilos de la sección de tutoriales */
+  .tutoriales-home {
+    background-color: #dfbebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .content-tutoriales-home {
+    text-align: center;
+  }
+  .video-container {
+    margin-top: 20px;
+  }
+  .video-container iframe {
+    width: 100%;
+  }
+  .content-tutoriales-home h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .content-tutoriales-home p {
+    font-size: 1em;
+  }
+  .content-tutoriales-home h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Estilos comunes */
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  /* Estilos de la sección de formulario de contacto */
+  .seccion-formulario {
+    background-color: #dfbebe;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .column {
+    padding: 20px;
+  }
+  .imagen-columna img {
+    max-width: 100%;
+  }
+    .formulario-columna {
+    background-color: rgba(233, 157, 228, 0.1882352941);
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .formulario-columna form {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario-columna form label {
+    margin-bottom: 5px;
+  }
+    .formulario-columna form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .formulario-columna form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .formulario-columna form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estilos del pie de página */
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(233, 157, 228, 0.1882352941);
+  }
+  .left-column img {
+    max-width: 100px;
+  }
+  .left-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .left-column p {
+    font-size: 0.8em;
+  }
+  .right-column p {
+    font-size: 0.8em;
+    margin: 0;
+    align-self: flex-end;
+  }
+  
+  /* Section Nosotros */
+  .parallax-nosotros {
+    height: 100vh;
+    background-image: url("../multimedia/imagenes/camara.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .parallax-content h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .parallax-content p {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  .section-container-nosotros {
+    background-color: #dfbebe;
+    padding: 50px;
+  }
+  .content-nosotros {
+    max-width: 100%;
+    text-align: center;
+  }
+  /* Section Pablo Imagen */
+  .imagen-seccion-pablo {
+    background-color: #dfbebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-pablo img {
+    max-width: 100%;
+  }
+  
+  /* Section Tutoriales */
+  .parallax-tutoriales {
+    height: 100vh;
+    background-image: url("../multimedia/imagenes/hama picachu.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .parallax-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .seccion-tutoriales {
+    padding: 20px;
+    background-color: #dfbebe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nueva-seccion h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .nueva-seccion p {
+    font-size: 1em;
+  }
+  .videos-seccion-tutoriales {
+    background-color: #dfbebe;
+    padding: 20px;
+  }
+  .videos-tutoriales {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .videos-tutoriales h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .videos-tutoriales p {
+    font-size: 1em;
+  }
+  .video-galleria-tutoriales {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .video {
+    width: 48%;
+    margin: 1%;
+  }
+  .video iframe {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* Section Blog */
+  .section-container-blog {
+    background-color: #dfbebe;
+    padding: 70px;
+  }
+  .column-image-blog {
+    background-color: #dfbebe;
+    padding: 50px;
+  }
+  .column-text-blog {
+    background-color: #dfbebe;
+    padding: 50px;
+  }
+  .page-blog {
+    background-color: #dfbebe;
+  }
+  .section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .column-notas {
+    padding: 20px;
+    text-align: center;
+  }
+  .column-notas img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+  }
+  .column-notas h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .column-notas p {
+    font-size: 1em;
+  }
+  
+  /* Section Contacto */
+  .page-contacto {
+    background-color: #f8c4c4;
+  }
+  .section-hero-contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .content-contacto {
+    padding: 100px;
+    text-align: center;
+    max-width: 600px;
+    background-color: #f8c4c4;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  .section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  .column {
+    padding: 20px;
+  }
+  .column img {
+    width: 100%;
+    display: block;
+  }
+  .column:last-child {
+    margin-left: 20px;
+    max-width: 400px;
+  }
+  .column:last-child form {
+    display: flex;
+    flex-direction: column;
+  }
+  .column:last-child form label {
+    margin-bottom: 5px;
+  }
+  .column:last-child form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  @media screen and (min-width: 376px) and (max-width: 960px) {
+    header, header .header-section{
+    background-color: #c00;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    header, header .header-section{
+      height: auto;
+      align-items: center;
+      padding:20px 0;
+    }
+    .header-section ul.navegacion{
+      display: flex;
+      flex-direction: column;
+    }
+    section.tarjetas-home{
+      flex-wrap: wrap;    
+    }
+    
+  }

@@ -1,0 +1,32 @@
+ /* Header */
+ header, header .header-section {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    ul.navegacion {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-item a, .logo a {
+      color: $color-secundario;
+      font-size: 20px;
+      padding: 0 18px;
+      text-decoration: none;
+    }
+    .logo a {
+      font-family: "Pixelify+Sans", "Poppins";
+      font-size: 36px;
+      padding: 0 16px;
+      &first-of-type{
+        color: $color-primario;
+      }
+    }
+  }

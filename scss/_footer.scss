@@ -1,0 +1,30 @@
+/* Estilos del pie de página */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(233, 157, 228, 0.1882352941);
+    
+    .left-column {
+      img {
+        max-width: 100px;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      p {
+        font-size: 0.8em;
+      }
+    }
+    
+    .right-column {
+      p {
+        font-size: 0.8em;
+        margin: 0;
+        align-self: flex-end;
+      }
+    }
+  }

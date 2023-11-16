@@ -25,7 +25,7 @@
       font-family: "Pixelify+Sans", "Poppins";
       font-size: 36px;
       padding: 0 16px;
-      &first-of-type{
+      &:first-of-type{
         color: $color-primario;
       }
     }

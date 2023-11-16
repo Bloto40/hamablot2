@@ -2,6 +2,9 @@
     header, header .header-section {
       background-color: #c00;
     }
+    .header ul.navegacion, header .header-section ul.navegacion{
+      flex-direction: column;
+      }
   }
   
   @media screen and (max-width: 375px) {
@@ -13,6 +16,9 @@
       .header-section ul.navegacion {
         display: flex;
         flex-direction: column;
+      }
+      .header ul.navegacion, header .header-section ul.navegacion{
+      flex-direction: column;
       }
     }
     

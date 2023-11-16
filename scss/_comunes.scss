@@ -15,3 +15,78 @@ h2 {
     cursor: pointer;
     font-size: 1em;
   }
+
+  .parallax-container {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+ 
+  .parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+  
+    p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+
+  .p-home{
+    background-image: url("../multimedia/imagenes/cupula.png");
+  }
+  .p-tutoriales {
+    background-image: url("../multimedia/imagenes/hama picachu.png");
+  }
+  .p-nosotros{
+    background-image: url("../multimedia/imagenes/camara.png");
+  }
+ 
+
+  @media screen and (max-width: 375px) {
+    header, header .header-section {
+      height: auto;
+      align-items: center;
+      padding: 20px 0;
+    }
+      .header-section ul.navegacion {
+        display: flex;
+        flex-direction: column;
+      }
+      header ul.navegacion, header .header-section ul.navegacion{
+      flex-direction: column;
+      }
+    
+    section.tarjetas-home {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 960px) {
+    header, header .header-section {
+      background-color: #c00;
+    }
+    header ul.navegacion, header .header-section ul.navegacion{
+      flex-direction: column;
+      }
+  }
+  
+ 

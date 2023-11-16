@@ -57,7 +57,7 @@ header .logo a, header .header-section .logo a {
   font-size: 36px;
   padding: 0 16px;
 }
-header .logo afirst-of-type, header .header-section .logo afirst-of-type {
+header .logo a:first-of-type, header .header-section .logo a:first-of-type {
   color: #dfbebe;
 }
 
@@ -80,10 +80,8 @@ p {
   font-size: 1em;
 }
 
-/* Inicio */
-.parallax-home {
+.parallax-container {
   height: 100vh;
-  background-image: url("../multimedia/imagenes/cupula.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,6 +98,8 @@ p {
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  text-align: center;
 }
 .parallax-content h1 {
   font-size: 3em;
@@ -110,6 +110,75 @@ p {
   margin: 0;
 }
 
+.p-home {
+  background-image: url("../multimedia/imagenes/cupula.png");
+}
+
+.p-tutoriales {
+  background-image: url("../multimedia/imagenes/hama picachu.png");
+}
+
+.p-nosotros {
+  background-image: url("../multimedia/imagenes/camara.png");
+}
+
+@media screen and (max-width: 375px) {
+  header, header .header-section {
+    height: auto;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header-section ul.navegacion {
+    display: flex;
+    flex-direction: column;
+  }
+  header ul.navegacion, header .header-section ul.navegacion {
+    flex-direction: column;
+  }
+  section.tarjetas-home {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 960px) {
+  header, header .header-section {
+    background-color: #c00;
+  }
+  header ul.navegacion, header .header-section ul.navegacion {
+    flex-direction: column;
+  }
+}
+/* Inicio */
+/*.parallax-home {
+    height: 100vh;
+    background-image: url("../multimedia/imagenes/cupula.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+  */
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
@@ -295,7 +364,7 @@ section.tarjetas-home .tarjeta-home .descripcion-tarjeta {
 }
 
 /* Section Nosotros */
-.parallax-nosotros {
+/* .parallax-nosotros {
   height: 100vh;
   background-image: url("../multimedia/imagenes/camara.png");
   background-attachment: fixed;
@@ -304,17 +373,14 @@ section.tarjetas-home .tarjeta-home .descripcion-tarjeta {
   background-size: cover;
   position: relative;
 }
-
 .parallax-content h1 {
   font-size: 3em;
   margin: 0;
 }
-
 .parallax-content p {
   font-size: 1.5em;
   margin: 0;
-}
-
+}*/
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
@@ -360,7 +426,7 @@ section.tarjetas-home .tarjeta-home .descripcion-tarjeta {
 }
 
 /* Section Tutoriales */
-.parallax-tutoriales {
+/*.parallax-tutoriales {
   height: 100vh;
   background-image: url("../multimedia/imagenes/hama picachu.png");
   background-attachment: fixed;
@@ -369,12 +435,10 @@ section.tarjetas-home .tarjeta-home .descripcion-tarjeta {
   background-size: cover;
   position: relative;
 }
-
 .parallax-content {
   max-width: 100%;
   text-align: center;
-}
-
+}*/
 .seccion-tutoriales {
   padding: 20px;
   background-color: #dfbebe;
